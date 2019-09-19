@@ -1,0 +1,50 @@
+{
+    "type":"SoC",
+    "name":"CH645",
+    "title": "WCH SoC CH645",
+    "description":"WCH RISC-V4C USBHS+PD+ETH SoC",
+    "version":"1.0.0",
+    "Core": {
+        "num": 1,
+        "type":"RISC-V4C",
+        "Freq": 125,
+        "DMIPS": 100,
+        "CoreMark": 160
+    },
+    "manufacturer": {
+        "vendor":"WCH",
+        "homepage": "http://www.wch.cn/products/CH645.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/CH645.git"
+    },
+    "series":["CH645"],
+    "package":["QSOP28","QFN32","QFN48","LQFP48","LQFP48X7"],
+    "peripheral": ["TIM","ADC","USB","UART","SPI","LDO","PWM"],
+    "price":[14,18],
+    "PWR": {
+        "VDD": [2800,5000],
+        "Ivdd": 3.5,
+        "LDO": [5000,3300],
+        "rate": 1024
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "upload": {
+        "ISP": true,
+        "IAP": true,
+        "SWD": true,
+        "speed": 115200
+    },
+    "keywords": [
+        "RISC-V",
+        "RISC-V4C",
+        "WCH",
+        "CH645",
+        "USBHS","NFC","BLE","I2C","RTC","SPI",
+        "3.6V","1.8V"
+    ]
+}
